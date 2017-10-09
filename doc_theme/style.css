@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-  color: $color_1;
+  color: #1e8098;
 }
 
 h1 {
@@ -83,7 +83,7 @@ input {
 }
 
 input:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
 }
 
 input[disabled] {
@@ -104,7 +104,7 @@ select {
 }
 
 select:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
 }
 
 select::-ms-expand {
@@ -121,7 +121,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
 }
 
 .container {
@@ -167,9 +167,9 @@ ul {
 
 /***** Buttons *****/
 .button, [role="button"] {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
   border-radius: 4px;
-  color: $color_1;
+  color: #1e8098;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -191,18 +191,18 @@ ul {
 }
 
 .button::after, [role="button"]::after {
-  color: $color_1;
+  color: #1e8098;
 }
 
 .button:hover, .button:active, .button:focus, .button[aria-selected="true"], [role="button"]:hover, [role="button"]:active, [role="button"]:focus, [role="button"][aria-selected="true"] {
-  background-color: $color_1;
+  background-color: #1e8098;
   color: $color_2;
   text-decoration: none;
 }
 
 .button[aria-selected="true"]:hover, .button[aria-selected="true"]:focus, .button[aria-selected="true"]:active, [role="button"][aria-selected="true"]:hover, [role="button"][aria-selected="true"]:focus, [role="button"][aria-selected="true"]:active {
-  background-color: darken($color_1, 20%);
-  border-color: darken($color_1, 20%);
+  background-color: darken(#1e8098, 20%);
+  border-color: darken(#1e8098, 20%);
 }
 
 .button[data-disabled], [role="button"][data-disabled] {
@@ -210,7 +210,7 @@ ul {
 }
 
 .button-large, input[type="submit"] {
-  background-color: $color_1;
+  background-color: #1e8098;
   border: 0;
   border-radius: 4px;
   color: $color_2;
@@ -229,7 +229,7 @@ ul {
 }
 
 .button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background-color: darken($color_1, 20%);
+  background-color: darken(#1e8098, 20%);
 }
 
 .button-large[disabled], input[type="submit"][disabled] {
@@ -331,7 +331,7 @@ ul {
 }
 
 .form-field input:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
 }
 
 .form-field input[type="text"] {
@@ -340,7 +340,7 @@ ul {
 }
 
 .form-field input[type="text"]:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
 }
 
 .form-field input[type="checkbox"] {
@@ -356,7 +356,7 @@ ul {
 }
 
 .form-field .nesty-input:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
   text-decoration: none;
 }
 
@@ -627,7 +627,7 @@ ul {
 }
 
 .avatar .icon-agent::before {
-  background-color: $color_1;
+  background-color: #1e8098;
   border: 2px solid #fff;
   border-radius: 50%;
   bottom: -4px;
@@ -854,7 +854,7 @@ ul {
 }
 
 .search input[type="search"]:focus {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
   color: #555;
 }
 
@@ -1005,7 +1005,7 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
   border-radius: 4px;
   box-sizing: border-box;
   color: #666;
@@ -1025,8 +1025,8 @@ ul {
 }
 
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $color_1;
-  border: 1px solid $color_1;
+  background-color: #1e8098;
+  border: 1px solid #1e8098;
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
@@ -1051,7 +1051,7 @@ ul {
 }
 
 .blocks-item-link {
-  color: $color_1;
+  color: #1e8098;
   padding: 20px 30px;
 }
 
@@ -1238,7 +1238,7 @@ ul {
 }
 
 .recent-activity-item-comment span::before {
-  color: $color_1;
+  color: #1e8098;
   content: "\1F4AC";
   display: inline-block;
   font-size: 15px;
@@ -1316,7 +1316,7 @@ ul {
 }
 
 .icon-star::before {
-  color: $color_1;
+  color: #1e8098;
   font-size: 18px;
 }
 
@@ -1543,7 +1543,7 @@ ul {
 }
 
 .article-comment-count .icon-comments {
-  color: $color_1;
+  color: #1e8098;
   content: "\1F4AC";
   display: inline-block;
   font-size: 18px;
@@ -1602,8 +1602,8 @@ ul {
 
 .article-vote {
   background: transparent;
-  border: 1px solid $color_1;
-  color: $color_1;
+  border: 1px solid #1e8098;
+  color: #1e8098;
   margin: 10px 5px;
   min-width: 90px;
   width: auto;
@@ -1626,11 +1626,11 @@ ul {
 
 .article-vote:focus, .article-vote:active {
   background-color: transparent;
-  color: $color_1;
+  color: #1e8098;
 }
 
 .article-vote:hover {
-  background-color: $color_1;
+  background-color: #1e8098;
 }
 
 .article-vote:hover::before, .article-vote:hover::after, .article-vote[aria-selected="true"]::before, .article-vote[aria-selected="true"]::after {
@@ -1680,14 +1680,14 @@ ul {
 }
 
 .article-unsubscribe {
-  background-color: $color_1;
+  background-color: #1e8098;
   color: $color_2;
   text-decoration: none;
 }
 
 .article-unsubscribe:hover {
-  background-color: darken($color_1, 20%);
-  border-color: darken($color_1, 20%);
+  background-color: darken(#1e8098, 20%);
+  border-color: darken(#1e8098, 20%);
 }
 
 .sidenav-title {
@@ -1705,7 +1705,7 @@ ul {
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $color_1;
+  background-color: #1e8098;
   color: $color_2;
   text-decoration: none;
 }
@@ -1787,7 +1787,7 @@ ul {
 }
 
 .share a:hover::before {
-  color: $color_1;
+  color: #1e8098;
 }
 
 .share-twitter::before {
@@ -1837,7 +1837,7 @@ ul {
 }
 
 .comment-callout a {
-  color: $color_1;
+  color: #1e8098;
 }
 
 .comment-sorter {
@@ -1863,7 +1863,7 @@ ul {
 }
 
 .comment-wrapper.comment-official {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
   padding: 40px 20px 20px;
 }
 
@@ -1987,7 +1987,7 @@ ul {
 }
 
 .comment-attachments a {
-  color: $color_1;
+  color: #1e8098;
 }
 
 .comment-body {
@@ -2086,7 +2086,7 @@ ul {
 
 .vote-up:hover::before,
 .vote-down:hover::before {
-  color: $color_1;
+  color: #1e8098;
 }
 
 .vote-up::before, .vote-down::before {
@@ -2103,11 +2103,11 @@ ul {
 }
 
 .vote-voted::before {
-  color: $color_1;
+  color: #1e8098;
 }
 
 .vote-voted:hover::before {
-  color: darken($color_1, 20%);
+  color: darken(#1e8098, 20%);
 }
 
 /***** Actions *****/
@@ -2246,7 +2246,7 @@ ul {
 }
 
 .community-follow [role="button"]:hover {
-  background-color: $color_1;
+  background-color: #1e8098;
 }
 
 .community-follow [role="button"]:hover::after, .community-follow [role="button"]:focus::after {
@@ -2255,7 +2255,7 @@ ul {
 }
 
 .community-follow [role="button"][aria-selected="true"] {
-  background-color: $color_1;
+  background-color: #1e8098;
   color: $color_2;
 }
 
@@ -2265,14 +2265,14 @@ ul {
 }
 
 .community-follow [role="button"][aria-selected="true"]:hover {
-  background-color: darken($color_1, 20%);
-  border-color: darken($color_1, 20%);
+  background-color: darken(#1e8098, 20%);
+  border-color: darken(#1e8098, 20%);
 }
 
 .community-follow [role="button"]::after {
-  border-left: 1px solid $color_1;
+  border-left: 1px solid #1e8098;
   content: attr(data-follower-count);
-  color: $color_1;
+  color: #1e8098;
   display: inline-block;
   font-family: $font_1;
   margin-left: 15px;
@@ -2289,7 +2289,7 @@ ul {
 
 [dir="rtl"] .community-follow [role="button"]::after {
   border-left: 0;
-  border-right: 1px solid $color_1;
+  border-right: 1px solid #1e8098;
   margin: 0 10px 0 0;
   padding: 0 10px 0 0;
 }
@@ -2402,7 +2402,7 @@ ul {
 }
 
 .status-label-pinned, .status-label-featured, .status-label-official {
-  background-color: $color_1;
+  background-color: #1e8098;
 }
 
 .status-label-official {
@@ -2653,7 +2653,7 @@ ul {
 }
 
 .post-comment-count .icon-comments {
-  color: $color_1;
+  color: #1e8098;
   content: "\1F4AC";
   display: inline-block;
   font-size: 18px;
@@ -2773,7 +2773,7 @@ ul {
 
 @media (min-width: 768px) {
   .collapsible-nav-list li[aria-selected="true"] {
-    border-bottom: 4px solid $color_1;
+    border-bottom: 4px solid #1e8098;
     order: 1;
     padding: 15px 0 11px 0;
   }
@@ -2885,7 +2885,7 @@ ul {
 }
 
 .my-activities-sub-nav li[aria-selected="true"] {
-  border-color: $color_1;
+  border-color:#1e8098;
 }
 
 .my-activities-table .striped-list-title {
@@ -3033,7 +3033,7 @@ ul {
 }
 
 .requests-table-toolbar .organization-unsubscribe {
-  background-color: $color_1;
+  background-color: #1e8098;
   color: $color_2;
 }
 
@@ -3099,7 +3099,7 @@ ul {
 
 /* Following table */
 .subscriptions-unsubscribe a {
-  background: $color_1;
+  background: #1e8098;
   border-radius: 4px;
   color: $color_2;
   display: inline-block;
@@ -3117,7 +3117,7 @@ ul {
 }
 
 .subscriptions-unsubscribe a:hover {
-  background-color: darken($color_1, 20%);
+  background-color: darken(#1e8098, 20%);
   text-decoration: none;
 }
 
@@ -3252,7 +3252,7 @@ ul {
 }
 
 .request-main .form-field.comment-ccs > ul[data-hc-focus="true"] {
-  border: 1px solid $color_1;
+  border: 1px solid #1e8098;
 }
 
 .request-main .form-field.comment-ccs > input[type="text"] {
@@ -3268,7 +3268,7 @@ ul {
 }
 
 .request-main .comment-ccs + textarea:focus {
-  border-top: 1px solid $color_1;
+  border-top: 1px solid #1e8098;
 }
 
 .request-main input#mark_as_solved {
@@ -3424,7 +3424,7 @@ ul {
 }
 
 .pagination-current {
-  background-color: $color_1;
+  background-color: #1e8098;
 }
 
 .pagination-current a, .pagination-current span {
@@ -3681,7 +3681,7 @@ ul {
 }
 
 .profile-header .options [data-action="edit-profile"] {
-  background-color: $color_1;
+  background-color: #1e8098;
   border: 0;
   color: $color_2;
   line-height: normal;
@@ -3824,9 +3824,9 @@ ul {
 
 .profile-private-badge {
   flex-basis: 100%;
-  border: solid 1px $color_1;
+  border: solid 1px #1e8098;
   border-radius: 4px;
-  color: $color_1;
+  color: #1e8098;
   padding: 5px 20px;
   font-size: 12px;
   text-align: center;
@@ -4236,7 +4236,7 @@ ul {
 }
 
 .search-result-votes::before, .search-result-meta-count::before {
-  color: $color_1;
+  color: #1e8098;
 }
 
 [dir="ltr"] .search-result-votes, [dir="ltr"] .search-result-meta-count {
