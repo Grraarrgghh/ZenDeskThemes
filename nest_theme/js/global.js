@@ -17,9 +17,6 @@ HC.templates.home = new Vue({
     currentTab: null
   },
 
-  created: function() {
-  },
-
   mounted: function() {
     // Set first category or section as current tab by default
     var firstTab = $(".nav-list").children(".nav-item").first();
