@@ -74,13 +74,14 @@
             </div>
           {{else}}
             {{#each sections}}
-              <section class="section">
+              <section :class="['nav-category', 'nav-section', isActive({{id}}) && 'active']" data-id="{{id}}">
                 <h3 class="section-tree-title">
                   <a href="{{url}}">{{name}}</a>
                   {{#if internal}}
                     <span class="icon-lock" title="{{t 'internal'}}"></span>
                   {{/if}}
                 </h3>
+
                 {{#if articles}}
                   <ul class="article-list">
                     {{#each articles}}
