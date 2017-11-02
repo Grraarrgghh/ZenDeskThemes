@@ -14,27 +14,27 @@ Vue.options.delimiters = ['{[{', '}]}'];
 HC.templates.home = new Vue({
 
   data: {
-    currentCategory: null
+    currentTab: null
   },
 
   created: function() {
   },
 
   mounted: function() {
-    var firstCategory = $(".nav-list").children(".nav-item").first(),
-        firstCategoryId = $(firstCategory).data("category-id");
-    this.currentCategory = firstCategoryId;
+    var firstTab = $(".nav-list").children(".nav-item").first(),
+        firstTabId = $(firstTab).data("id");
+    this.currentTab = firstTabId;
 
     $(".nav-content-inner").removeClass('hide');
   },
 
   methods: {
     isActive: function(id) {
-      return id === this.currentCategory;
+      return id === this.currentTab;
     },
 
-    setCategory: function(id) {
-      this.currentCategory = id;
+    setTab: function(id) {
+      this.currentTab = id;
     }
   }
 });
