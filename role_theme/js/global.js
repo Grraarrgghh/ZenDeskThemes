@@ -3,12 +3,15 @@
  */
 
 $(document).ready(function() {
+  // Set first tab as active by default
   $(".tab:first-child, .tab-content:first-child").addClass("active");
 
+  // Toggle tabs when clicked
   $(".tab").click(function() {
     var $tab = $(this),
       categoryId = $tab.data("id");
 
+    // Switch active class from prev to new tab
     $(".tab.active, .tab-content.active").removeClass("active");
     $tab.addClass("active");
     $("#" + categoryId).addClass("active");
