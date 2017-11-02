@@ -24,15 +24,29 @@ var sidebar = new Vue({
 
   methods: {
 
+    /**
+     * Return true if section is displaying articles
+     * @param  {integer}  id section ID
+     * @return {Boolean}
+     */
     isOpen: function(id) {
       return id == this.activeSection ? 'open' : '';
     },
 
+    /**
+     * Return true if article ID matches current ID
+     * @param  {integer}  id article ID
+     * @return {Boolean}
+     */
     isCurrent: function(id) {
       var currentId = this._getPageId(window.location.href);
       return id == currentId ? 'current' : '';
     },
 
+    /**
+     * Fetches article, section and category data
+     * @param  {string} url API endpoint url
+     */
     fetchData: function(url) {
       var url = url || "/api/v2/help_center/" + this._getLocale() + "/articles.json?per_page=100&include=sections,categories";
 
@@ -61,6 +75,11 @@ var sidebar = new Vue({
       }.bind(this));
     },
 
+    /**
+     * Map list of articles to section IDs
+     * @param  {array} articles
+     * @param  {array} sections
+=     */
     mapArticlesToSections: function(articles, sections) {
       var articleGroups = _.groupBy(articles, "section_id");
 
@@ -69,6 +88,11 @@ var sidebar = new Vue({
       }, this);
     },
 
+    /**
+     * Map list of sections to category IDs
+     * @param  {array} sections
+     * @param  {array} categories
+=     */
     mapSectionsToCategories: function(sections, categories) {
       var sectionGroups = _.groupBy(sections, "category_id");
 
@@ -77,6 +101,10 @@ var sidebar = new Vue({
       }, this);
     },
 
+    /**
+     * Set active section
+     * @param {integer} sectionId section ID
+     */
     setActiveSection: function(sectionId) {
       if (sectionId === this.activeSection) {
         this.activeSection = null;
@@ -85,6 +113,11 @@ var sidebar = new Vue({
       }
     },
 
+    /**
+     * Return current article
+     * @param  {array} articles
+     * @return {object} current article
+     */
     getCurrentArticle: function(articles) {
       var currArticleId = this._getPageId(window.location.href),
           currArticle = _.find(articles, {id: currArticleId});
@@ -92,6 +125,11 @@ var sidebar = new Vue({
       return currArticle;
     },
 
+    /**
+     * Set prev and next links
+     * @param {array} sections
+     * @param {object} currArticle
+     */
     setNavLinks: function(sections, currArticle) {
       let currSection = _.find(sections, {id: currArticle.section_id}),
           currArticleIndex = _.findIndex(currSection.articles, {id: currArticle.id}),
@@ -105,6 +143,10 @@ var sidebar = new Vue({
 
     },
 
+    /**
+     * Helper method to get current help center locale
+     * @return {string} locale code
+     */
     _getLocale: function() {
       var links = window.location.href.split("/"),
           hcIndex = links.indexOf("hc"),
@@ -114,6 +156,11 @@ var sidebar = new Vue({
       return locale;
     },
 
+    /**
+     * Helper method to get current page ID
+     * @param  {string} url
+     * @return {integer} page ID
+     */
     _getPageId: function(url) {
       var links = url.split("/"),
           page = links[links.length - 1],
