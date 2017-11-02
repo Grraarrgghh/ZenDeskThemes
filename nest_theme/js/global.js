@@ -21,18 +21,28 @@ HC.templates.home = new Vue({
   },
 
   mounted: function() {
-    var firstTab = $(".nav-list").children(".nav-item").first(),
-        firstTabId = $(firstTab).data("id");
-    this.currentTab = firstTabId;
+    // Set first category or section as current tab by default
+    var firstTab = $(".nav-list").children(".nav-item").first();
+    this.currentTab = $(firstTab).data("id");
 
+    // Display nav content
     $(".nav-content-inner").removeClass('hide');
   },
 
   methods: {
+    /**
+     * Return true if given id matches current tab ID
+     * @param  {integer}  id category or section ID
+     * @return {Boolean}
+     */
     isActive: function(id) {
       return id === this.currentTab;
     },
 
+    /**
+     * Sets current tab to given ID
+     * @param {integer} id category or section
+     */
     setTab: function(id) {
       this.currentTab = id;
     }
