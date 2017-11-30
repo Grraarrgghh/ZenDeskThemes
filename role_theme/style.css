@@ -459,7 +459,7 @@ input[type="submit"][disabled] {
 /***** Header *****/
 
 .header {
-  background: $color_1;
+  background: $header_color;
 }
 
 .header-inner {
@@ -790,7 +790,7 @@ input[type="submit"][disabled] {
 
 .hero {
   position: relative;
-  background-image: url($homepage_background_image);
+  background-image: url($people);
   background-position: center 55%;
   background-size: cover;
   height: 300px;

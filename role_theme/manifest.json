@@ -1,6 +1,6 @@
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
+  "name": "Role Theme",
+  "author": "Zendesk Labs",
   "version": "0.0.1",
   "api_version": 1,
   "settings": [
@@ -12,14 +12,14 @@
           "type": "color",
           "description": "Brand color for major navigational elements",
           "label": "Brand color",
-          "value": "#7B7B7B"
+          "value": "#333333"
         },
         {
-          "identifier": "color_skip",
+          "identifier": "header_color",
           "type": "color",
-          "description": "Make thing ugly",
-          "label": "Skip color",
-          "value": "#11f1f1"
+          "description": "Background color for header",
+          "label": "Header color",
+          "value": "#333333"
         },
         {
           "identifier": "color_2",
@@ -239,6 +239,12 @@
           "type": "file",
           "description": "Image for the community section on the home page",
           "label": "Community banner"
+        },
+        {
+          "identifier": "people",
+          "type": "file",
+          "description": "Image for the Custom Hero banner",
+          "label": "Custom Hero banner"
         }
       ]
     }
