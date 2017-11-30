@@ -1138,9 +1138,17 @@ main {
   }
 }
 
+.nav-content-inner {
+  flex: 1;
+}
+
 .nav-content .article-list-item {
   border-bottom: none;
   padding: 10px 0;
+}
+
+.nav-section .article-list-item {
+  border-bottom: 1px solid #DDD;
 }
 
 .nav-category {
