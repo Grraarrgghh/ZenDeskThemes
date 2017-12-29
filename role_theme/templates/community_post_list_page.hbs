@@ -58,42 +58,54 @@
   </div>
 
   <ul class="posts-list striped-list">
-    {{#each posts}}
-      <div class="striped-list-item {{#if featured}}post-featured{{/if}}">
-        <span class="striped-list-info">
-          <a href="{{url}}" title="{{title}}" class="striped-list-title">{{title}}</a>
-          <span class="post-overview-item">
-            {{#if pinned}}
-              <span class="status-label status-label-pinned">{{t 'pinned'}}</span>
-            {{/if}}
-
-            {{#if featured}}
-              <span class="status-label status-label-featured">{{t 'featured'}}</span>
-            {{/if}}
-
-            {{#is status 'none'}}
-            {{else}}
-              <span class="status-label-{{status_dasherized}} status-label striped-list-status">{{status_name}}</span>
-            {{/is}}
-          </span>
-
-          <ul class="meta-group">
-            <li class="meta-data">{{author.name}}</li>
-            <li class="meta-data">{{t 'created'}} {{date created_at timeago=true}}</li>
-          </ul>
-        </span>
-
-        <div class="post-overview-count striped-list-count">
-          <span class="striped-list-count-item">
-            <span class="striped-list-number">{{vote_sum}}</span>
-            {{t 'vote' count=vote_sum}}
-          </span>
-          <span class="striped-list-count-item">
-            <span class="striped-list-number">{{comment_count}}</span>
-            {{t 'comment' count=comment_count}}
-          </span>
-        </div>
+    {{#unless posts}}
+      <div class="no-posts-with-filter">
+        {{t 'no_posts_with_filter'}}
       </div>
+    {{/unless}}
+    {{#each posts}}
+      <li>
+        <div class="striped-list-item {{#if featured}}post-featured{{/if}}">
+          <span class="striped-list-info">
+            <a href="{{url}}" title="{{title}}" class="striped-list-title">{{title}}</a>
+            <span class="post-overview-item">
+              {{#if pinned}}
+                <span class="status-label status-label-pinned">{{t 'pinned'}}</span>
+              {{/if}}
+
+              {{#if featured}}
+                <span class="status-label status-label-featured">{{t 'featured'}}</span>
+              {{/if}}
+
+              {{#is status 'none'}}
+              {{else}}
+                <span class="status-label-{{status_dasherized}} status-label striped-list-status">{{status_name}}</span>
+              {{/is}}
+            </span>
+
+            <ul class="meta-group">
+              <li class="meta-data">{{author.name}}</li>
+              {{#if editor}}
+                <li class="meta-data">{{date edited_at timeago=true}}</li>
+                <li class="meta-data">{{t 'edited'}}</li>
+              {{else}}
+                <li class="meta-data">{{date created_at timeago=true}}</li>
+              {{/if}}
+            </ul>
+          </span>
+
+          <div class="post-overview-count striped-list-count">
+            <span class="striped-list-count-item">
+              <span class="striped-list-number">{{vote_sum}}</span>
+              {{t 'vote' count=vote_sum}}
+            </span>
+            <span class="striped-list-count-item">
+              <span class="striped-list-number">{{comment_count}}</span>
+              {{t 'comment' count=comment_count}}
+            </span>
+          </div>
+        </div>
+      </li>
     {{/each}}
   </ul>
 

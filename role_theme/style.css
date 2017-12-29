@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   /* Should be equal to height of footer */
 }
 
@@ -98,7 +98,7 @@ input[disabled] {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("/hc/assets/dropdown-arrow.svg") no-repeat #fff;
+  background: url("$assets-zd-dropdown-arrow-svg") no-repeat #fff;
   background-position: right 10px center;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -421,7 +421,7 @@ input[type="submit"][disabled] {
 
 [data-loading="true"] input,
 [data-loading="true"] textarea {
-  background: transparent url("/hc/assets/loader.gif") 99% 50% no-repeat;
+  background: transparent url("$assets-zd-loader-gif") 99% 50% no-repeat;
   background-size: 16px 16px;
 }
 
@@ -459,7 +459,7 @@ input[type="submit"][disabled] {
 /***** Header *****/
 
 .header {
-  background: $header_color;
+  background: $color_1;
 }
 
 .header-inner {
@@ -790,7 +790,7 @@ input[type="submit"][disabled] {
 
 .hero {
   position: relative;
-  background-image: url($people);
+  background-image: url($homepage_background_image);
   background-position: center 55%;
   background-size: cover;
   height: 300px;
@@ -1511,7 +1511,7 @@ input[type="submit"][disabled] {
 @media (min-width: 1024px) {
   .article-sidebar {
     border: 0;
-    flex: 0 0 22%;
+    flex: 0 0 17%;
     height: auto;
   }
 }

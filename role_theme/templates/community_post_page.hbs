@@ -48,9 +48,14 @@
                   {{/link}}
                 </span>
 
-                <div class="post-published meta">
-                  {{date post.created_at}}
-                </div>
+                <ul class="meta-group">
+                  {{#if post.editor}}
+                    <li class="meta-data">{{date post.edited_at timeago=true}}</li>
+                    <li class="meta-data">{{t 'edited'}}</li>
+                  {{else}}
+                    <li class="meta-data">{{date post.created_at timeago=true}}</li>
+                  {{/if}}
+                </ul>
               </div>
 
               {{#if post.pending}}
@@ -73,9 +78,9 @@
           <div class="post-actions-wrapper">
             <div class="post-vote vote" role='radiogroup'>
               {{#with post}}
-                {{vote 'up' role='radio' class='vote-up'}}
+                {{vote 'up' role='radio' class='vote-up' selected_class='vote-voted'}}
                 {{vote 'sum' class='vote-sum'}}
-                {{vote 'down' role='radio' class='vote-down'}}
+                {{vote 'down' role='radio' class='vote-down' selected_class='vote-voted'}}
               {{/with}}
             </div>
 
@@ -136,23 +141,25 @@
                       {{/link}}
                     </span>
 
-                    <span class="comment-published">
-                      {{date created_at}}
+                    <ul class="meta-group">
                       {{#if editor}}
-                        ({{t 'edited'}} {{date edited_at timeago=true class='comment-publised'}})
+                        <li class="meta-data">{{date edited_at timeago=true}}</li>
+                        <li class="meta-data">{{t 'edited'}}</li>
+                      {{else}}
+                        <li class="meta-data">{{date created_at timeago=true}}</li>
                       {{/if}}
-                    </span>
+                    </ul>
                   </div>
-
-                  {{#if pending}}
-                    <span class="comment-pending status-label status-label-pending">{{t 'pending_approval'}}</span>
-                  {{/if}}
-
-                  {{#with ticket}}
-                    <a href="{{url}}" target="_zendesk_lotus" class="status-label escalation-badge">
-                      {{t 'request'}} {{id}}
-                    </a>
-                  {{/with}}
+                  <div class="comment-labels">
+                    {{#with ticket}}
+                      <a href="{{url}}" target="_zendesk_lotus" class="status-label escalation-badge">
+                        {{t 'request'}} {{id}}
+                      </a>
+                    {{/with}}
+                    {{#if pending}}
+                      <span class="comment-pending status-label status-label-pending">{{t 'pending_approval'}}</span>
+                    {{/if}}
+                  </div>
                 </div>
 
                 <section class="comment-body">{{body}}</section>
@@ -161,9 +168,9 @@
               <div class="comment-actions-container">
                 {{#unless official}}
                   <div class="comment-vote vote" role='radiogroup'>
-                    {{vote 'up' role='radio' class='vote-up'}}
+                    {{vote 'up' role='radio' class='vote-up' selected_class='vote-voted'}}
                     {{vote 'sum' class='vote-sum'}}
-                    {{vote 'down' role='radio' class='vote-down'}}
+                    {{vote 'down' role='radio' class='vote-down' selected_class='vote-voted'}}
                   </div>
                 {{/unless}}
                 <div class="comment-actions actions">
