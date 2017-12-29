@@ -35,7 +35,8 @@
 
 ## [Classic Theme](classic_theme)
 
-- [Classic Theme Demo](https://classic-theme.zendesk.com/hc/en-us)
+[Classic Theme Demo](https://classic-theme.zendesk.com/hc/en-us)
+
 - Inspired by timelessness of large icon tiles, one of the most popular layouts on Zendesk help center themes
 - Good for:
 - 3-4 categories
