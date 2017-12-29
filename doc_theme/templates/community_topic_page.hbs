@@ -75,7 +75,12 @@
 
             <ul class="meta-group">
               <li class="meta-data">{{author.name}}</li>
-              <li class="meta-data">{{date created_at timeago=true}}</li>
+              {{#if editor}}
+                <li class="meta-data">{{date edited_at timeago=true}}</li>
+                <li class="meta-data">{{t 'edited'}}</li>
+              {{else}}
+                <li class="meta-data">{{date created_at timeago=true}}</li>
+              {{/if}}
             </ul>
           </span>
 
