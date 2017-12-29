@@ -985,6 +985,15 @@ ul {
   margin: 40px 0;
 }
 
+.home-image {
+  min-height: 300px;
+  background-image: url($homepage_background_image);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+
 /***** Blocks *****/
 
 
@@ -1149,7 +1158,7 @@ ul {
 
 .community-image {
   min-height: 300px;
-  background-image: url($community_image);
+  /*background-image: url($community_image);*/
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;

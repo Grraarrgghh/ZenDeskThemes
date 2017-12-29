@@ -1,5 +1,5 @@
 {
-  "name": "Custom Theme",
+  "name": "Doc Theme",
   "author": "Zendesk",
   "version": "1.0.0",
   "api_version": 1,
@@ -227,12 +227,6 @@
           "type": "file",
           "description": "community_background_image_description",
           "label": "community_background_image_label"
-        },
-        {
-          "identifier": "community_image",
-          "type": "file",
-          "description": "community_image_description",
-          "label": "community_image_label"
         }
       ]
     }
