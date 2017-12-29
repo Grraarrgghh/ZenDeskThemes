@@ -26,5 +26,18 @@
   "community_background_image_description": "Hero image on the community topics page",
   "community_background_image_label": "Community hero image",
   "community_image_description": "Image for the community section on the home page",
-  "community_image_label": "Community banner"
+  "community_image_label": "Community banner",
+  "icons_group_label": "Custom Icons",
+  "category_1_id_description": "Category ID for box #1 on home page",
+  "category_1_id_label": "#1 Category ID",
+  "category_1_icon_description": "Icon image for box #1 on home page",
+  "category_1_icon_label": "#1 Category Icon",
+  "category_2_id_description": "Category ID for box #2 on home page",
+  "category_2_id_label": "#2 Category ID",
+  "category_2_icon_description": "Icon image for box #2 on home page",
+  "category_2_icon_label": "#2 Category Icon",
+  "category_3_id_description": "Category ID for box #3 on home page",
+  "category_3_id_label": "#3 Category ID",
+  "category_3_icon_description": "Icon image for box #3 on home page",
+  "category_3_icon_label": "#3 Category Icon"
 }

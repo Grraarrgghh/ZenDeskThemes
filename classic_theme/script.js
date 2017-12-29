@@ -1,17 +1,5 @@
-var HC = {};
+var HC = window.HC || {};
 
-HC.SETTINGS = {
-
-  tutorialCategory: 115001339528,
-
-  assetRoot: "//p5.zdassets.com/hc/theme_assets/1868444/115000213048/",
-
-  icons: {
-    "115001339528": "rocket.png", // Getting Started
-    "115001344487": "tools.png", // Knowledge Base
-    "community": "chat.png", // Community
-  },
-}
 
 Vue.options.delimiters = ['{[{', '}]}'];
 
@@ -21,20 +9,10 @@ Vue.component('icon', {
   props: ['id'],
   computed: {
     iconUrl: function() {
-      return HC.SETTINGS.assetRoot + HC.SETTINGS.icons[this.id];
+      return HC.SETTINGS.icons[this.id];
     }
   }
 });
-
-
-HC.Utils = {
-  getPageId: function(url) {
-    var links = url.split("/"),
-      result = links[links.length - 1];
-
-    return parseInt(result, 10) || null;
-  },
-}
 
 
 /*
@@ -44,7 +22,7 @@ HC.Utils = {
 $(document).ready(function() {
 
   // Redirect Getting Started category to first article in category
-  var $category = $(".knowledge-base .blocks-item[data-category='" + HC.SETTINGS.tutorialCategory + "']"),
+  var $category = $(".knowledge-base .blocks-item:first-child"),
     $firstArticle = $category.find(".article-link").first();
 
   if ($firstArticle) $category.find(".blocks-item-link").attr("href", $firstArticle.attr("href"));

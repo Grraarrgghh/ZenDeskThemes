@@ -1,5 +1,5 @@
 {
-  "name": "Custom Theme",
+  "name": "Classic Theme",
   "author": "Zendesk",
   "version": "1.0.0",
   "api_version": 1,
@@ -233,6 +233,50 @@
           "type": "file",
           "description": "community_image_description",
           "label": "community_image_label"
+        }
+      ]
+    },
+    {
+      "label": "icons_group_label",
+      "variables": [
+        {
+          "identifier": "category_1_id",
+          "type": "text",
+          "description": "category_1_id_description",
+          "label": "category_1_id_label",
+          "value": "000000000"
+        },
+        {
+          "identifier": "category_1_icon",
+          "type": "file",
+          "description": "category_1_icon_description",
+          "label": "category_1_icon_label"
+        },
+        {
+          "identifier": "category_2_id",
+          "type": "text",
+          "description": "category_2_id_description",
+          "label": "category_2_id_label",
+          "value": "000000000"
+        },
+        {
+          "identifier": "category_2_icon",
+          "type": "file",
+          "description": "category_2_icon_description",
+          "label": "category_2_icon_label"
+        },
+        {
+          "identifier": "category_3_id",
+          "type": "text",
+          "description": "category_3_id_description",
+          "label": "category_3_id_label",
+          "value": "community"
+        },
+        {
+          "identifier": "category_3_icon",
+          "type": "file",
+          "description": "category_3_icon_description",
+          "label": "category_3_icon_label"
         }
       ]
     }
