@@ -3,11 +3,13 @@ var HC = {};
 HC.SETTINGS = {
 
   tutorialCategory: 115001339528,
+
+  assetRoot: "//p5.zdassets.com/hc/theme_assets/1868444/115000213048/",
+
   icons: {
-    "201295803": document.head.querySelector("[property=asseturlrocket]").content, // Getting Started
-    "201295783": document.head.querySelector("[property=asseturltools]").content, // Knowledge Base
-    "community": document.head.querySelector("[property=asseturlchat]").content, // Community
-    "201295763": document.head.querySelector("[property=asseturlrocket]").content, // Getting Started
+    "115001339528": "rocket.png", // Getting Started
+    "115001344487": "tools.png", // Knowledge Base
+    "community": "chat.png", // Community
   },
 }
 
@@ -19,7 +21,7 @@ Vue.component('icon', {
   props: ['id'],
   computed: {
     iconUrl: function() {
-      return HC.SETTINGS.icons[this.id];
+      return HC.SETTINGS.assetRoot + HC.SETTINGS.icons[this.id];
     }
   }
 });

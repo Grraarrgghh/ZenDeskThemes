@@ -4,9 +4,9 @@
     {{search submit=false instant=true class='search search-full'}}
     <div class="quick-search">
       <span>Popular Search Topics:</span>
-      <a @click="onQuickSearchClick" href="#">Purchase</a>,
-      <a @click="onQuickSearchClick" href="#">Installation</a>,
-      <a @click="onQuickSearchClick" href="#">Customization</a>
+      <a href="#">Purchase</a>,
+      <a href="#">Installation</a>,
+      <a href="#">Customization</a>
     </div>
   </div>
 </section>
@@ -67,13 +67,9 @@
   </section>
 </div>
 <script>
-new Vue({
-  el: 'main',
-  methods: {
-  	onQuickSearchClick: function (event){
-  		document.location = document.location.origin +'/hc/search?utf8=✓&query='+event.target.innerText
-    }
-  }
+new Vue(
+{
+  el: 'main'
 })
 
 $("body").addClass("no-subfooter");

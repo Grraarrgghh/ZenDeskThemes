@@ -1,78 +1,58 @@
 {
-  "name": "classic",
+  "name": "Custom Theme",
   "author": "Zendesk",
   "version": "1.0.0",
   "api_version": 1,
+  "default_locale": "en-us",
   "settings": [
     {
-      "label": "Colors",
+      "label": "colors_group_label",
       "variables": [
         {
-          "identifier": "brand_color",
+          "identifier": "color_1",
           "type": "color",
-          "description": "Brand color for major navigational elements",
-          "label": "Brand color",
-          "value": "#0072ef"
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "#3a3f4e"
         },
         {
-          "identifier": "brand_text_color",
+          "identifier": "color_2",
           "type": "color",
-          "description": "Brand color for hover and active states",
-          "label": "Brand text color",
-          "value": "rgba(245, 15, 15, 1)"
-        },
-        {
-          "identifier": "text_color",
-          "type": "color",
-          "description": "Text color for body and heading elements",
-          "label": "Text color",
-          "value": "#333333"
-        },
-        {
-          "identifier": "link_color",
-          "type": "color",
-          "description": "Text color for link elements",
-          "label": "Link color",
-          "value": "#0072ef"
-        },
-        {
-          "identifier": "background_color",
-          "type": "color",
-          "description": "Background color of your Help Center",
-          "label": "Background color",
+          "description": "brand_text_color_description",
+          "label": "brand_text_color_label",
           "value": "#ffffff"
         },
         {
-          "identifier": "header_background_color",
+          "identifier": "color_3",
           "type": "color",
-          "description": "Background color of header",
-          "label": "Header Background color",
-          "value": "#3a3f4e"
+          "description": "text_color_description",
+          "label": "text_color_label",
+          "value": "#333333"
         },
         {
-          "identifier": "sub_footer_background_color",
+          "identifier": "color_4",
           "type": "color",
-          "description": "Background color of Sub Footer",
-          "label": "Sub Footer Background color",
-          "value": "#3a3f4e"
+          "description": "link_color_description",
+          "label": "link_color_label",
+          "value": "#445485"
         },
         {
-          "identifier": "hero_background_color",
+          "identifier": "color_5",
           "type": "color",
-          "description": "Background color of Hero Section",
-          "label": "Hero Section Background color",
-          "value": "#3a3f4e"
+          "description": "background_color_description",
+          "label": "background_color_label",
+          "value": "#ffffff"
         }
       ]
     },
     {
-      "label": "Fonts",
+      "label": "fonts_group_label",
       "variables": [
         {
-          "identifier": "heading_font",
+          "identifier": "font_1",
           "type": "list",
-          "description": "Font for headings",
-          "label": "Heading Font",
+          "description": "heading_font_description",
+          "label": "heading_font_label",
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
           "options": [
             {
@@ -142,10 +122,10 @@
           ]
         },
         {
-          "identifier": "text_font",
+          "identifier": "font_2",
           "type": "list",
-          "description": "Font for body text",
-          "label": "Text Font",
+          "description": "text_font_description",
+          "label": "text_font_label",
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
           "options": [
             {
@@ -217,42 +197,42 @@
       ]
     },
     {
-      "label": "Brand",
+      "label": "brand_group_label",
       "variables": [
         {
           "identifier": "logo",
           "type": "file",
-          "description": "Company logo",
-          "label": "Logo"
+          "description": "logo_description",
+          "label": "logo_label"
         },
         {
           "identifier": "favicon",
           "type": "file",
-          "description": "Icon displayed in the address bar of your browser",
-          "label": "Favicon"
+          "description": "favicon_description",
+          "label": "favicon_label"
         }
       ]
     },
     {
-      "label": "Images",
+      "label": "images_group_label",
       "variables": [
         {
           "identifier": "homepage_background_image",
           "type": "file",
-          "description": "Hero image on the home page",
-          "label": "Home hero image"
+          "description": "homepage_background_image_description",
+          "label": "homepage_background_image_label"
         },
         {
           "identifier": "community_background_image",
           "type": "file",
-          "description": "Hero image on the community topics page",
-          "label": "Community hero image"
+          "description": "community_background_image_description",
+          "label": "community_background_image_label"
         },
         {
           "identifier": "community_image",
           "type": "file",
-          "description": "Image for the community section on the home page",
-          "label": "Community banner"
+          "description": "community_image_description",
+          "label": "community_image_label"
         }
       ]
     }
