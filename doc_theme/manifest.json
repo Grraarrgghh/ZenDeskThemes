@@ -234,6 +234,25 @@
           "label": "Community banner"
         }
       ]
+    },
+    {
+      "label": "Homepage",
+      "variables": [
+        {
+          "identifier": "homepage_title",
+          "type": "text",
+          "description": "The title text on the home page",
+          "label": "Homepage Title",
+          "value": "Welcome to Zen Themes!"
+        },
+        {
+          "identifier": "homepage_description",
+          "type": "text",
+          "description": "The description text displayed on the home page",
+          "label": "Homepage Description",
+          "value": "Get familiar with the features and how they work:"
+        }
+      ]
     }
   ]
 }
