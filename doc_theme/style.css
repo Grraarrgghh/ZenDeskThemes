@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100%;
-  background-color: $color_5;
-  color: $color_3;
+  background-color: $background_color;
+  color: $text_color;
   font-family: 'Open Sans', $font_2;
   font-size: 15px;
   font-weight: 400;
@@ -64,7 +64,7 @@ h4 {
 }
 
 a {
-  color: $color_4;
+  color: $link_color;
   text-decoration: none;
 }
 
@@ -196,7 +196,7 @@ ul {
 
 .button:hover, .button:active, .button:focus, .button[aria-selected="true"], [role="button"]:hover, [role="button"]:active, [role="button"]:focus, [role="button"][aria-selected="true"] {
   background-color: #1e8098;
-  color: $color_2;
+  color: $brand_text_color;
   text-decoration: none;
 }
 
@@ -213,7 +213,7 @@ ul {
   background-color: #1e8098;
   border: 0;
   border-radius: 4px;
-  color: $color_2;
+  color: $brand_text_color;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.72;
@@ -237,15 +237,15 @@ ul {
 }
 
 .button-secondary {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   border: 1px solid #ddd;
   background-color: transparent;
 }
 
 .button-secondary:hover, .button-secondary:focus, .button-secondary:active {
-  color: $color_3;
+  color: $text_color;
   border: 1px solid #ddd;
-  background-color: darken($color_5, 3%);
+  background-color: darken($background_color, 3%);
 }
 
 /***** Tables *****/
@@ -262,7 +262,7 @@ ul {
 
 .table th,
 .table th a {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-size: 13px;
   font-weight: 300;
   text-align: left;
@@ -375,7 +375,7 @@ ul {
 }
 
 .form-field p {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-size: 12px;
   margin: 5px 0;
 }
@@ -392,7 +392,7 @@ ul {
 }
 
 .form footer a {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   cursor: pointer;
   margin-right: 15px;
 }
@@ -413,7 +413,7 @@ ul {
 }
 
 .form .suggestion-list li a:visited {
-  color: darken($color_4, 20%);
+  color: darken($link_color, 20%);
 }
 
 /***** Header *****/
@@ -512,7 +512,7 @@ ul {
 .nav-wrapper .icon-menu {
   display: inline-block;
   margin-right: 10px;
-  color: $color_4;
+  color: $link_color;
 }
 
 @media (min-width: 768px) {
@@ -631,7 +631,7 @@ ul {
   border: 2px solid #fff;
   border-radius: 50%;
   bottom: -4px;
-  color: $color_2;
+  color: $brand_text_color;
   content: "\1F464";
   font-size: 14px;
   height: 14px;
@@ -650,7 +650,7 @@ ul {
 }
 
 .footer a {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
 }
 
 .footer-inner {
@@ -669,7 +669,7 @@ ul {
 }
 
 .footer-language-selector {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: inline-block;
   font-weight: 300;
 }
@@ -738,7 +738,7 @@ ul {
 
 .sidebar-item.open > .sidebar-item-title,
 .sidebar-item.current .sidebar-item-link {
-  color: $color_4;
+  color: $link_color;
   font-weight: 600;
 }
 
@@ -813,7 +813,7 @@ ul {
 }
 
 .breadcrumbs li {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: inline;
   font-weight: 300;
   font-size: 13px;
@@ -828,7 +828,7 @@ ul {
 }
 
 .breadcrumbs li a:visited {
-  color: $color_4;
+  color: $link_color;
 }
 
 /***** Search field *****/
@@ -1030,7 +1030,7 @@ ul {
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $color_2;
+  color: $brand_text_color;
   text-decoration: none;
 }
 
@@ -1047,7 +1047,7 @@ ul {
 }
 
 .blocks-item-internal a {
-  color: $color_3;
+  color: $text_color;
 }
 
 .blocks-item-link {
@@ -1127,7 +1127,7 @@ ul {
 
 .promoted-articles-item a {
   border-bottom: 1px solid #ddd;
-  color: $color_3;
+  color: $text_color;
   display: block;
   padding: 15px 0;
 }
@@ -1186,7 +1186,7 @@ ul {
 
 .recent-activity-item-parent, .recent-activity-item-link {
   margin: 6px 0;
-  color: $color_3;
+  color: $text_color;
   display: inline-block;
   width: 100%;
 }
@@ -1219,7 +1219,7 @@ ul {
 }
 
 .recent-activity-item-time, .recent-activity-item-comment {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: inline-block;
   font-size: 13px;
   font-weight: 300;
@@ -1297,7 +1297,7 @@ ul {
 }
 
 .section-tree-title a {
-  color: $color_3;
+  color: $text_color;
 }
 
 .section-tree .see-all-articles {
@@ -1312,7 +1312,7 @@ ul {
 }
 
 .article-list-item a {
-  color: $color_3;
+  color: $text_color;
 }
 
 .icon-star::before {
@@ -1448,7 +1448,7 @@ ul {
 }
 
 .article-body a:visited {
-  color: darken($color_4, 20%);
+  color: darken($link_color, 20%);
 }
 
 .article-body a:hover,
@@ -1459,7 +1459,7 @@ ul {
 
 
 .article-body code {
-  background: darken($color_5, 3%);
+  background: darken($background_color, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 0 5px;
@@ -1467,7 +1467,7 @@ ul {
 }
 
 .article-body pre {
-  background: darken($color_5, 3%);
+  background: darken($background_color, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px 15px;
@@ -1477,7 +1477,7 @@ ul {
 
 .article-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -1534,7 +1534,7 @@ ul {
 }
 
 .article-comment-count {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
 }
 
@@ -1634,7 +1634,7 @@ ul {
 }
 
 .article-vote:hover::before, .article-vote:hover::after, .article-vote[aria-selected="true"]::before, .article-vote[aria-selected="true"]::after {
-  color: $color_2;
+  color: $brand_text_color;
 }
 
 .article-vote-up::before {
@@ -1661,7 +1661,7 @@ ul {
 }
 
 .article-return-to-top a {
-  color: $color_3;
+  color: $text_color;
   display: block;
   padding: 20px 0;
 }
@@ -1681,7 +1681,7 @@ ul {
 
 .article-unsubscribe {
   background-color: #1e8098;
-  color: $color_2;
+  color: $brand_text_color;
   text-decoration: none;
 }
 
@@ -1697,7 +1697,7 @@ ul {
 
 .sidenav-item {
   border-radius: 4px;
-  color: $color_3;
+  color: $text_color;
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
@@ -1706,7 +1706,7 @@ ul {
 
 .sidenav-item.current-article, .sidenav-item:hover {
   background-color: #1e8098;
-  color: $color_2;
+  color: $brand_text_color;
   text-decoration: none;
 }
 
@@ -1734,7 +1734,7 @@ ul {
 }
 
 .attachments .attachment-item::before {
-  color: $color_3;
+  color: $text_color;
   content: "\1F4CE";
   font-size: 15px;
   left: 0;
@@ -1753,7 +1753,7 @@ ul {
 }
 
 .upload-dropzone span {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
 }
 
 /***** Social share links *****/
@@ -1775,7 +1775,7 @@ ul {
 }
 
 .share a::before {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: block;
   font-size: 23px;
   text-align: center;
@@ -1829,7 +1829,7 @@ ul {
 }
 
 .comment-callout {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: inline-block;
   font-weight: 300;
   font-size: 13px;
@@ -1846,7 +1846,7 @@ ul {
 }
 
 .comment-sorter a {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
   font-size: 13px;
   text-decoration: none;
@@ -2026,11 +2026,11 @@ ul {
 }
 
 .comment-body a:visited {
-  color: darken($color_4, 20%);
+  color: darken($link_color, 20%);
 }
 
 .comment-body code {
-  background: darken($color_5, 3%);
+  background: darken($background_color, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 0 5px;
@@ -2038,7 +2038,7 @@ ul {
 }
 
 .comment-body pre {
-  background: darken($color_5, 3%);
+  background: darken($background_color, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px 15px;
@@ -2048,7 +2048,7 @@ ul {
 
 .comment-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2074,7 +2074,7 @@ ul {
 }
 
 .vote-sum {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: block;
   margin: 3px 0;
 }
@@ -2090,7 +2090,7 @@ ul {
 }
 
 .vote-up::before, .vote-down::before {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-size: 24px;
 }
 
@@ -2124,13 +2124,13 @@ ul {
 }
 
 .actions .dropdown-toggle:hover::before, .actions .dropdown-toggle:focus::before, .actions .dropdown-toggle:active::before {
-  background-color: darken($color_5, 3%);
+  background-color: darken($background_color, 3%);
 }
 
 .actions .dropdown-toggle::before {
   background-color: transparent;
   border-radius: 50%;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   content: "\2699";
   display: block;
   font-size: 13px;
@@ -2250,18 +2250,18 @@ ul {
 }
 
 .community-follow [role="button"]:hover::after, .community-follow [role="button"]:focus::after {
-  border-color: $color_2;
-  color: $color_2;
+  border-color: $brand_text_color;
+  color: $brand_text_color;
 }
 
 .community-follow [role="button"][aria-selected="true"] {
   background-color: #1e8098;
-  color: $color_2;
+  color: $brand_text_color;
 }
 
 .community-follow [role="button"][aria-selected="true"]::after {
-  border-left: 1px solid $color_2;
-  color: $color_2;
+  border-left: 1px solid $brand_text_color;
+  color: $brand_text_color;
 }
 
 .community-follow [role="button"][aria-selected="true"]:hover {
@@ -2321,7 +2321,7 @@ ul {
 }
 
 .striped-list-title {
-  color: $color_4;
+  color: $link_color;
   margin-bottom: 10px;
   margin-right: 5px;
 }
@@ -2331,7 +2331,7 @@ ul {
 }
 
 .striped-list-title:visited {
-  color: darken($color_4, 20%);
+  color: darken($link_color, 20%);
 }
 
 .striped-list .meta-group {
@@ -2339,7 +2339,7 @@ ul {
 }
 
 .striped-list-count {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
   font-size: 13px;
   justify-content: flex-start;
@@ -2377,7 +2377,7 @@ ul {
 
 @media (min-width: 768px) {
   .striped-list-number {
-    color: $color_3;
+    color: $text_color;
     display: block;
     font-weight: 400;
   }
@@ -2430,7 +2430,7 @@ ul {
 
 .status-label-pending, .status-label-not-planned {
   background-color: #eee;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
 }
 
 .status-label-pending {
@@ -2609,11 +2609,11 @@ ul {
 }
 
 .post-body a:visited {
-  color: darken($color_4, 20%);
+  color: darken($link_color, 20%);
 }
 
 .post-body code {
-  background: darken($color_5, 3%);
+  background: darken($background_color, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 0 5px;
@@ -2621,7 +2621,7 @@ ul {
 }
 
 .post-body pre {
-  background: darken($color_5, 3%);
+  background: darken($background_color, 3%);
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 10px 15px;
@@ -2631,7 +2631,7 @@ ul {
 
 .post-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2644,7 +2644,7 @@ ul {
 }
 
 .post-comment-count {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
 }
 
@@ -2731,7 +2731,7 @@ ul {
 }
 
 .collapsible-nav-list li {
-  color: $color_3;
+  color: $text_color;
   line-height: 45px;
   order: 1;
 }
@@ -2752,7 +2752,7 @@ ul {
 }
 
 .collapsible-nav-list li a {
-  color: $color_3;
+  color: $text_color;
   display: block;
 }
 
@@ -2780,7 +2780,7 @@ ul {
 }
 
 .collapsible-nav-list li[aria-selected="true"] a {
-  color: $color_3;
+  color: $text_color;
 }
 
 .collapsible-nav-list li[aria-selected="true"]::after {
@@ -2867,7 +2867,7 @@ ul {
 
 /***** My activities *****/
 .my-activities-nav {
-  background-color: darken($color_5, 5%);
+  background-color: darken($background_color, 5%);
   border: 0;
   margin-bottom: 20px;
 }
@@ -3034,7 +3034,7 @@ ul {
 
 .requests-table-toolbar .organization-unsubscribe {
   background-color: #1e8098;
-  color: $color_2;
+  color: $brand_text_color;
 }
 
 .requests-table-toolbar + .requests-search-info {
@@ -3101,7 +3101,7 @@ ul {
 .subscriptions-unsubscribe a {
   background: #1e8098;
   border-radius: 4px;
-  color: $color_2;
+  color: $brand_text_color;
   display: inline-block;
   font-size: 12px;
   line-height: 2.34;
@@ -3147,7 +3147,7 @@ ul {
 
 /* Contributions table */
 .contributions-table td:last-child {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-size: 13px;
   font-weight: 300;
 }
@@ -3161,7 +3161,7 @@ ul {
 }
 
 .no-activities {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
 }
 
 /***** Request *****/
@@ -3241,7 +3241,7 @@ ul {
 
 .request-main .comment-show-container-content {
   align-self: center;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   margin-left: 10px;
 }
 
@@ -3297,7 +3297,7 @@ ul {
 
 @media (min-width: 1024px) {
   .request-sidebar {
-    background-color: darken($color_5, 3%);
+    background-color: darken($background_color, 3%);
     border: 0;
     font-size: 13px;
     flex: 0 0 auto;
@@ -3347,7 +3347,7 @@ ul {
 }
 
 .request-details dt {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
   width: 40%;
 }
@@ -3406,13 +3406,13 @@ ul {
 }
 
 .pagination li:hover:not(.pagination-current) span, .pagination li:hover:not(.pagination-current) a {
-  color: $color_3;
+  color: $text_color;
   text-decoration: none;
 }
 
 .pagination a, .pagination span {
   font-size: 15px;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   padding: 10px 12px;
 }
 
@@ -3428,7 +3428,7 @@ ul {
 }
 
 .pagination-current a, .pagination-current span {
-  color: $color_2;
+  color: $brand_text_color;
 }
 
 .pagination-first {
@@ -3457,7 +3457,7 @@ ul {
 }
 
 .meta-data {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-size: 13px;
   font-weight: 300;
 }
@@ -3591,7 +3591,7 @@ ul {
 /* User Profiles */
 .profile-header {
   padding: 30px 0;
-  background-color: darken($color_5, 3%);
+  background-color: darken($background_color, 3%);
 }
 
 .profile-header .container {
@@ -3683,7 +3683,7 @@ ul {
 .profile-header .options [data-action="edit-profile"] {
   background-color: #1e8098;
   border: 0;
-  color: $color_2;
+  color: $brand_text_color;
   line-height: normal;
   padding: 8px 20px;
 }
@@ -3710,7 +3710,7 @@ ul {
 }
 
 .profile-stats .stat-label {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
   flex: 0 0 100px;
   margin-right: 10px;
@@ -3847,7 +3847,7 @@ ul {
 }
 
 .profile-nav {
-  background-color: darken($color_5, 5%);
+  background-color: darken($background_color, 5%);
   border: 0;
   margin-bottom: 37px;
 }
@@ -3875,7 +3875,7 @@ ul {
 .profile-section-description {
   flex-basis: 100%;
   padding: 10px 0;
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   font-weight: 300;
   font-size: 13px;
   white-space: nowrap;
@@ -4125,7 +4125,7 @@ ul {
   padding: 20px;
   margin-top: 10px;
   border-radius: 8px;
-  background-color: darken($color_5, 3%);
+  background-color: darken($background_color, 3%);
 }
 
 @media (min-width: 768px) {
@@ -4147,7 +4147,7 @@ ul {
   content: "";
   background-size: 14px 14px;
   background-repeat: no-repeat;
-  background-color: $color_5;
+  background-color: $background_color;
   background-position: 50% 50%;
   text-align: center;
   line-height: 40px;
@@ -4227,7 +4227,7 @@ ul {
 }
 
 .search-result-votes, .search-result-meta-count {
-  color: lighten($color_3, 20%);
+  color: lighten($text_color, 20%);
   display: inline-block;
   font-size: 13px;
   font-weight: 300;
