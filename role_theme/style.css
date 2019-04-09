@@ -2968,7 +2968,7 @@ input[type="submit"][disabled] {
 }
 
 @media (min-width: 768px) {
-  .my-activities-table td:not(: first-child) {
+  .my-activities-table td:not(:first-child) {
     display: table-cell;
   }
 }
